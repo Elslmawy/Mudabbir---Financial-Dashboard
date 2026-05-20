@@ -11,7 +11,7 @@ A bold, high-contrast responsive financial dashboard inspired by modern UI desig
 * 🎨 **Unique Aesthetic:** Bold typography, crisp shadows, and a clean, vibrant interface optimized for clear financial tracking.
 * 🌐 **Native RTL Layout:** Engineered from scratch to support seamless right-to-left alignment, tailored perfectly for Arabic web apps.
 * 📱 **Fully Responsive:** Beautifully adaptive layout that transitions flawlessly across Mobile, Tablet, and Desktop screens using semantic Media Queries.
-*⚡ **Lightweight CSS**: Zero frameworks, meaning faster loading times and clean, direct styling.
+* ⚡ **Lightweight CSS:** Zero frameworks, meaning faster loading times and clean, direct styling.
 ---
 
 ## 💻 Tech Stack
