@@ -1,0 +1,342 @@
+/* ==========================================================================
+   RESPONSIVE DESIGN - FINAL CLEAN VERSION (CLEANED & VERIFIED)
+   ========================================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+/* =====================
+   1- Desktop
+   ===================== */
+@media (min-width: 1025px) {
+    .dashboard-container {
+        grid-template-columns: 260px 1fr;
+    }
+}
+
+/* =====================
+   2- Tablet
+   ===================== */
+@media (max-width: 1024px) {
+    .top-header {
+        grid-column: span 2 !important; 
+        order: 1 !important;
+        width: 100%;
+        padding: 24px 20px;
+        min-height: 90px;
+        background: #fff;
+        border-radius: 12px;
+        box-sizing: border-box;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center;
+        flex-wrap: wrap !important;
+    }
+
+    .top-header .header-right {
+        display: flex !important;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .top-header .logo-icon i {
+        font-size: 22px;
+    }
+
+    .top-header .logo-text {
+        display: flex !important;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .top-header .logo-text h2 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .top-header .logo-text p {
+        font-size: 13px;
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    .top-header .header-left {
+        display: flex !important;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .top-header .icon-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .top-header .user-profile img {
+        width: 42px;
+        height: 42px;
+        border-radius: 10px;
+    }
+
+    .top-header .user-info .name {
+        font-size: 14px;
+    }
+
+    .top-header .user-info .role {
+        font-size: 12px;
+    }
+
+    .dashboard-container {
+        grid-template-columns: 80px 1fr !important;
+    }
+
+    .sidebar-section {
+        width: 80px !important;
+        padding: 20px 10px !important;
+    }
+
+    .sidebar-section span,
+    .sidebar-section h3,
+    .logo-text,
+    .user-profile-info {
+        display: none !important;
+    }
+
+    .sidebar-section ul li a,
+    .quick-actions ul li a {
+        justify-content: center !important;
+        padding: 15px 0 !important;
+    }
+
+    .main-content-section {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 20px !important;
+        padding: 20px !important;
+    }
+
+    .dashboard-grid,
+    .bottom-grid,
+    .right-column,
+    .middle-column {
+        display: contents !important;
+    }
+
+    .stats-section {
+        grid-column: span 2 !important;
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 16px;
+        width: 100%;
+        order: 1 !important;
+    }
+
+    .stat-card {
+        width: 100%;
+    }
+
+    .activity-section {
+        grid-column: 1 / 2 !important;
+        order: 2 !important;
+    }
+
+    .bills-section {
+        grid-column: 2 / 3 !important;
+        order: 3 !important;
+    }
+
+    .transactions-section {
+        grid-column: span 2 !important;
+        width: 100% !important;
+        order: 4 !important;
+    }
+
+    .chart-section {
+        grid-column: 1 / 2 !important;
+        order: 5 !important;
+    }
+
+    .account-summary {
+        grid-column: 2 / 3 !important;
+        order: 6 !important;
+    }
+
+    .budget-section {
+        grid-column: 1 / 2 !important;
+        order: 7 !important;
+    }
+
+    .payment-section {
+        grid-column: 2 / 3 !important;
+        width: 100% !important;
+        order: 8 !important;
+    }
+}
+
+/* =====================
+   3- Mobile 
+   ===================== */
+@media (max-width: 768px) {
+
+    .dashboard-container {
+        display: block !important;
+    }
+
+    .sidebar-section {
+        display: none !important;
+    }
+
+    .main-content-section {
+        padding: 16px 12px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px;
+    }
+
+    .dashboard-grid,
+    .bottom-grid,
+    .right-column,
+    .middle-column {
+        display: contents !important;
+    }
+
+
+    .top-header {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        flex-wrap: wrap !important;
+        padding: 20px 16px;
+        background: #fff;
+        border-radius: 16px;
+        box-sizing: border-box;
+    }
+
+    .header-right {
+        display: flex !important;
+        align-items: center !important;
+        gap: 10px;
+    }
+
+    .logo-text {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .logo-text h2 {
+        font-size: 20px;
+        display: block;
+        margin: 0;
+    }
+
+    .logo-text p {
+        font-size: 13px;
+        display: block;
+        margin: 0;
+    }
+
+    .header-left {
+        display: flex !important;
+        align-items: center !important;
+        gap: 10px !important;
+    }
+
+    .icon-btn {
+        width: 38px;
+        height: 38px;
+    }
+
+    .user-info {
+        display: none !important; 
+    }
+
+    .user-profile img {
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        display: block;
+    }
+
+    .status-pill {
+        width: 100%; 
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 10px 0;
+        border-radius: 12px;
+        margin-top: 12px !important;
+        box-sizing: border-box;
+    }
+
+    .stats-section {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 16px;
+        width: 100%;
+        order: 2 !important;
+    }
+
+    .stat-card {
+        width: 100%;
+        padding: 22px 18px !important;
+    }
+
+    .activity-section {
+        order: 3 !important;
+        width: 100% !important;
+    }
+
+    .transactions-section {
+        order: 4 !important;
+        width: 100%;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .bills-section {
+        order: 5 !important;
+        width: 100%;
+    }
+
+    .chart-section {
+        order: 6 !important;
+        width: 100%;
+    }
+
+    .account-summary {
+        order: 7 !important;
+        width: 100%;
+    }
+
+    .budget-section {
+        order: 8 !important;
+        width: 100%;
+    }
+
+    .payment-section {
+        order: 9 !important;
+        width: 100%;
+    }
+
+    .transactions-table {
+        width: 100%;
+        min-width: 650px !important;
+    }
+
+    .bills-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+    }
+
+    .cards-list {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 16px;
+    }
+
+    .card-wrapper,
+    .budget-item,
+    .account-item {
+        width: 100%;
+    }
+}
